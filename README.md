@@ -1,7 +1,62 @@
 # Windows Photo Gallery
 
-## Goal
-To design and develop a modern, native Windows desktop application for managing and exploring image collections. The application will feature advanced, strictly local Artificial Intelligence (AI) capabilities for image understanding (object detection, classification, description), facial recognition, and natural language search, while adhering to high standards of code quality, security, and user experience
+A powerful gallery application for Windows desktop with local AI capabilities for image analysis, face recognition, and natural language search.
+
+## Features
+
+- **Local AI Processing**: All AI operations run locally on your device, ensuring privacy and security.
+- **Image Organization**: Scan folders for images and display them in a customizable grid view.
+- **Object Recognition**: Automatically identify objects in images using advanced computer vision.
+- **Face Detection & Recognition**: Detect faces in images and recognize people across your photo collection.
+- **Natural Language Search**: Find images using natural language queries like "find all images with Samantha in it" or "find all pictures with a horse in it".
+- **Interactive Viewing**: View images with zoom functionality and an AI-powered chat panel for asking questions about the image.
+
+## System Requirements
+
+- Windows 10 or higher
+- .NET 8.0 Runtime
+- 8GB RAM minimum (16GB recommended)
+- 4GB free disk space for application and AI models
+- GPU acceleration supported but not required
+
+## Installation
+
+1. Download the installer from the releases page.
+2. Run the installer and follow the on-screen instructions.
+3. On first launch, the application will download required AI models (approximately 2GB).
+
+## Quick Start
+
+1. Launch the application
+2. Click "Select Folder" to choose a directory containing images
+3. Click "Scan" to process the images with AI
+4. Browse your images in the gallery view
+5. Double-click any image to view it in detail with AI descriptions
+6. Use the search bar for natural language queries
+
+## Security Features
+
+- All processing happens locally on your device
+- No data is sent to cloud services
+- Password protection using industry-standard hashing
+- Optional encryption for sensitive metadata
+
+## Development
+
+### Building from Source
+
+```
+git clone https://github.com/username/modern-gallery.git
+cd modern-gallery
+dotnet restore
+dotnet build
+```
+
+### Running Tests
+
+```
+dotnet test
+```
 
 ## Core Principles
 
@@ -102,3 +157,15 @@ To design and develop a modern, native Windows desktop application for managing 
 - Customizable search queries and filters
 - Export/import capabilities for user data
 - Theming support for UI customization
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- YOLO for object detection
+- BlazeFace for face detection
+- ArcFace for face recognition
+- LLAMA for natural language processing
